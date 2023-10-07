@@ -5,9 +5,7 @@ class Solution {
         int sum=0;
         int rev=mat.length-1;
         for(int i=0; i<mat.length; i++){
-            if(i!=n-1){
-                sum+=mat[i][i];
-            }
+            if(i!=n-1)sum+=mat[i][i];
             sum+=mat[rev--][i];
         }
     
