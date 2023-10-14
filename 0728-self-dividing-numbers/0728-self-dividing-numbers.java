@@ -4,8 +4,7 @@ class Solution {
 
         while(num>0){
             int rem = num%10;
-            if(rem==0){return false;}
-            if(actualNum%rem!=0){return false;}
+            if(rem==0||actualNum%rem!=0){return false;}
             num=num/10;
         }
         return true;
